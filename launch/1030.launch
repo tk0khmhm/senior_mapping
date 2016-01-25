@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="knm_tiny_power" type="tf_for_bag" name="tf_for_bag" />
+	<node pkg="rp_mx28" type="conical_high_speed_eth" name="conical_high_speed_eth" args="-c 0.8" />
+	<node pkg="senior_mapping" type="pc_creator" name="pc_creator" />
+	<node pkg="senior_mapping" type="map_creator" name="map_creator" />
+
+</launch>
